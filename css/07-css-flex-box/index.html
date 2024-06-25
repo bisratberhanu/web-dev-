@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex box tutorial</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .nav-bar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background: violet;
+      }
+      a {
+        text-decoration: none;
+      }
+      h2 {
+        text-transform: uppercase;
+      }
+      .ul {
+        display: flex;
+        list-style: none;
+        text-transform: capitalize;
+        gap: 0 0.5rem;
+      }
+
+      .container {
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+      }
+      .to-banner {
+        text-transform: capitalize;
+        color: black;
+      }
+      .btn {
+        background: rgb(29, 147, 77);
+        border: 2px solid green;
+        border-radius: 4px;
+      }
+      .btn:hover {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <h2>logo</h2>
+      <ul class="ul">
+        <li><a href="" class="home"> home</a></li>
+        <li><a href="" class="about"> about</a></li>
+        <li><a href="" class="conact"> contact</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <button class="btn">
+        <a class="to-banner" href="banner.html">to banner</a>
+      </button>
+    </div>
+  </body>
+</html>

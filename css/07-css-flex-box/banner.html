@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banner</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: url(./beach.jpeg);
+        min-height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      h1 {
+        text-transform: uppercase;
+        font-size: 60px;
+        color: red;
+      }
+
+      .back-home {
+        text-decoration: none;
+        color: black;
+        text-transform: capitalize;
+        font-size: 1rem;
+      }
+      .btn {
+        background: blueviolet;
+        border: 4px solid orange;
+        border-radius: 20%;
+      }
+      .container {
+        display: flex;
+        min-height: 4rem;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>page title</h1>
+    </header>
+    <div class="container">
+      <button class="btn">
+        <a href="index.html" class="back-home">back home</a>
+      </button>
+    </div>
+  </body>
+</html>
